@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -6,10 +7,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print(client.user.id)
-    print("ready")
-    game = discord.Game("간호사")
-    await client.change_presence(status=discord.Status.online, activity=game)
-
+_Token
 
 
 
@@ -42,5 +40,5 @@ async def on_message(message):
 
 
 
-
-client.run("NjI5MTM4NTUxMDczNjY5MTMx.XZWtnQ.fIlNZhVwytaHqYLgfMoAvp6rgHw")
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
